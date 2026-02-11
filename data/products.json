@@ -1,177 +1,58 @@
 [
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 1",
-        "price": "LKR 15500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product1.jpg"
+        "brand": "BO BO NOIR",
+        "name": "Jane",
+        "price": "LKR 45,000",
+        "description": "Bold rectangular silhouette crafted in premium Italian acetate.",
+        "image": "https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 2",
-        "price": "LKR 16000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product2.jpg"
+        "brand": "OLIVER PEOPLES",
+        "name": "Gregory Peck",
+        "price": "LKR 52,000",
+        "description": "Iconic vintage-inspired frame with a classic keyhole bridge.",
+        "image": "https://images.unsplash.com/photo-1551443874-3259b3503f27?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 3",
-        "price": "LKR 16500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product3.jpg"
+        "brand": "MYKITA",
+        "name": "Lite",
+        "price": "LKR 68,000",
+        "description": "Ultra-lightweight stainless steel frame with patented hinge technology.",
+        "image": "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 4",
-        "price": "LKR 17000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product4.jpg"
+        "brand": "PETER AND MAY",
+        "name": "Parisian",
+        "price": "LKR 48,000",
+        "description": "Refined French design blending modern edge with timeless elegance.",
+        "image": "https://images.unsplash.com/photo-1516035054744-d474c5209db5?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 5",
-        "price": "LKR 17500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product5.jpg"
+        "brand": "BO BO NOIR",
+        "name": "William",
+        "price": "LKR 42,000",
+        "description": "Classic round frame featuring a minimalist structural design.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 6",
-        "price": "LKR 18000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product6.jpg"
+        "brand": "OLIVER PEOPLES",
+        "name": "O'Malley",
+        "price": "LKR 55,000",
+        "description": "Understated luxury with handcrafted details and superior optics.",
+        "image": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 7",
-        "price": "LKR 18500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product7.jpg"
+        "brand": "MYKITA",
+        "name": "Decades",
+        "price": "LKR 72,000",
+        "description": "Architectural eyewear reimagined for the contemporary individual.",
+        "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 8",
-        "price": "LKR 19000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product8.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 9",
-        "price": "LKR 19500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product9.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 10",
-        "price": "LKR 20000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product10.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 11",
-        "price": "LKR 20500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product11.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 12",
-        "price": "LKR 21000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product12.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 13",
-        "price": "LKR 21500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product13.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 14",
-        "price": "LKR 22000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product14.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 15",
-        "price": "LKR 22500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product15.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 16",
-        "price": "LKR 23000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product16.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 17",
-        "price": "LKR 23500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product17.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 18",
-        "price": "LKR 24000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product18.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 19",
-        "price": "LKR 24500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product19.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 20",
-        "price": "LKR 25000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product20.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 21",
-        "price": "LKR 25500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product21.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 22",
-        "price": "LKR 26000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product22.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 23",
-        "price": "LKR 26500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product23.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 24",
-        "price": "LKR 27000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product24.jpg"
-    },
-    {
-        "brand": "Optotech",
-        "name": "Luxury Frame 25",
-        "price": "LKR 27500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product25.jpg"
+        "brand": "PETER AND MAY",
+        "name": "Studio",
+        "price": "LKR 50,000",
+        "description": "Oversized proportions meets matte finishes for a bold statement.",
+        "image": "https://images.unsplash.com/photo-1502767089025-6572583495f9?auto=format&fit=crop&q=80&w=800"
     }
 ]

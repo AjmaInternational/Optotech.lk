@@ -1,21 +1,45 @@
-
-fetch('data/products.json')
-.then(response => response.json())
-.then(products => {
+document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('product-container');
-    products.forEach(product => {
-        const card = `
-        <div class="col-md-4 mb-4">
-            <div class="card p-3">
-                <img src="${product.image}" class="img-fluid mb-3"/>
-                <h6>${product.brand}</h6>
-                <h4>${product.name}</h4>
-                <p>${product.description}</p>
-                <h5>${product.price}</h5>
-                <a href="https://wa.me/94700000000?text=Hi%20I%20am%20interested%20in%20${encodeURIComponent(product.name)}" 
-                   class="btn btn-whatsapp w-100 mt-2">More Info</a>
-            </div>
-        </div>`;
-        container.innerHTML += card;
-    });
+    if (!container) return;
+
+    fetch('data/products.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(products => {
+            container.innerHTML = ''; // Clear container
+            products.forEach((product, index) => {
+                const card = `
+                <div class="group fade-up">
+                    <div class="overflow-hidden mb-10 aspect-[4/5] bg-white">
+                        <img src="${product.image}"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                             alt="${product.name}">
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div class="space-y-1">
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-brand-gray font-medium">${product.brand}</p>
+                                <h4 class="text-2xl font-bold font-sans">${product.name}</h4>
+                            </div>
+                            <p class="text-sm font-medium tracking-tighter">${product.price}</p>
+                        </div>
+                        <p class="text-brand-gray text-sm leading-relaxed">${product.description}</p>
+                        <hr class="border-black/5">
+                        <a href="https://wa.me/94700000000?text=Hi%20I%20am%20interested%20in%20the%20${encodeURIComponent(product.brand + ' ' + product.name)}"
+                           class="btn-outline w-full text-center py-4">
+                           Inquire
+                        </a>
+                    </div>
+                </div>`;
+                container.innerHTML += card;
+            });
+
+            // Re-trigger animations for dynamic content
+            if (window.initFadeAnimations) {
+                window.initFadeAnimations();
+            }
+        })
+        .catch(error => console.error('Error loading products:', error));
 });
