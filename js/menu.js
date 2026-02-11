@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bar2 = document.getElementById('bar2');
     const bar3 = document.getElementById('bar3');
     const navbar = document.getElementById('navbar');
+    const logoImg = navbar.querySelector('img');
 
     let isMenuOpen = false;
 
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bar3.classList.add('-rotate-45', '-translate-y-2');
                 document.body.style.overflow = 'hidden';
 
-                // When menu is open, we want the bars to be visible on the light background
+                // Switch navbar to light mode for menu
                 navbar.classList.remove('mix-blend-difference', 'text-white');
                 navbar.classList.add('text-brand-text');
                 bar1.classList.remove('bg-white');
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bar2.classList.add('bg-brand-text');
                 bar3.classList.remove('bg-white');
                 bar3.classList.add('bg-brand-text');
+                logoImg.classList.remove('invert', 'brightness-0');
             } else {
                 // Close menu
                 mobileMenu.classList.add('translate-x-full');
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 bar3.classList.remove('-rotate-45', '-translate-y-2');
                 document.body.style.overflow = '';
 
-                // Restore navbar state based on scroll
                 updateNavbarState();
             }
         });
@@ -47,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isMenuOpen) return;
 
         if (window.scrollY > 50) {
-            navbar.classList.add('bg-white', 'shadow-sm');
-            navbar.classList.remove('mix-blend-difference', 'text-white');
+            navbar.classList.add('bg-white', 'shadow-sm', 'py-4');
+            navbar.classList.remove('mix-blend-difference', 'text-white', 'py-6');
             navbar.classList.add('text-brand-text');
             bar1.classList.remove('bg-white');
             bar1.classList.add('bg-brand-text');
@@ -56,19 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
             bar2.classList.add('bg-brand-text');
             bar3.classList.remove('bg-white');
             bar3.classList.add('bg-brand-text');
+            logoImg.classList.remove('invert', 'brightness-0');
         } else {
-            navbar.classList.remove('bg-white', 'shadow-sm', 'text-brand-text');
-            navbar.classList.add('mix-blend-difference', 'text-white');
+            navbar.classList.remove('bg-white', 'shadow-sm', 'text-brand-text', 'py-4');
+            navbar.classList.add('mix-blend-difference', 'text-white', 'py-6');
             bar1.classList.add('bg-white');
             bar1.classList.remove('bg-brand-text');
             bar2.classList.add('bg-white');
             bar2.classList.remove('bg-brand-text');
             bar3.classList.add('bg-white');
             bar3.classList.remove('bg-brand-text');
+            logoImg.classList.add('invert', 'brightness-0');
         }
     }
 
-    // Handle scroll for navbar background
     window.addEventListener('scroll', updateNavbarState);
 
     // Close menu when a link is clicked
@@ -81,6 +83,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initial state check
+    // Handle Dropdown for touch devices
+    const dropdownToggle = document.querySelector('.group > span');
+    if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', (e) => {
+            if (window.innerWidth < 768) {
+                const menu = dropdownToggle.nextElementSibling;
+                menu.classList.toggle('hidden');
+            }
+        });
+    }
+
     updateNavbarState();
 });

@@ -1,50 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-    --bg-color: #F6F6F4;
-    --text-primary: #111111;
-    --accent-color: #1E2A44;
-    --secondary-gray: #B8B8B8;
+    --bg-color: #FAF9F6;
+    --text-color: #121212;
+    --accent-color: #8E7B55;
+    --gray-color: #707070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--bg-color);
-    color: var(--text-primary);
+    color: var(--text-color);
     font-family: 'Inter', sans-serif;
-    margin: 0;
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Bodoni Moda', serif;
 }
 
-.text-accent {
-    color: var(--accent-color);
+.section-padding {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
-.text-gray {
-    color: var(--secondary-gray);
-}
-
-/* Custom Utilities */
-.letter-spacing-widest {
-    letter-spacing: 0.2em;
-}
+/* Custom Cursor or other luxury elements could go here */
 
 .btn-outline {
-    border: 1px solid var(--text-primary);
-    padding: 0.75rem 2rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border: 1px solid var(--text-color);
     text-transform: uppercase;
     font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    transition: all 0.3s ease;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--text-primary);
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .btn-outline:hover {
-    background-color: var(--text-primary);
+    background-color: var(--text-color);
     color: var(--bg-color);
 }
 
@@ -54,15 +53,28 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(30px);
 }
 
-/* Spacing */
-.section-padding {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+/* Products Card Grid refinement */
+.product-card {
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (max-width: 768px) {
-    .section-padding {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* Navbar mix-blend handled in JS */
+#navbar {
+    transition: all 0.5s ease;
+}
+
+.nav-link-active {
+    opacity: 0.5;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }

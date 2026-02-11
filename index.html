@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optotech.lk | Premium Optical Experience</title>
+    <title>Optotech.lk | Luxury Optical & Sunglasses in Negombo, Sri Lanka</title>
+    <meta name="description" content="Discover the finest luxury eyewear at Optotech.lk, Negombo's premier optical destination. Premium frames, designer sunglasses, and expert eye care in Sri Lanka.">
+    <meta name="keywords" content="Optical Negombo, Sunglasses Sri Lanka, Luxury Eyewear Negombo, Designer Frames Sri Lanka, Eye testing Negombo, Optotech">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Optotech.lk | Premium Optical Experience">
+    <meta property="og:description" content="Refining vision through a fashion-forward lens. Explore our curated editorial collection in Negombo.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:url" content="https://optotech.lk">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,13 +25,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#F6F6F4',
-                        'brand-text': '#111111',
-                        'brand-accent': '#1E2A44',
-                        'brand-gray': '#B8B8B8',
+                        'brand-bg': '#FAF9F6',
+                        'brand-text': '#121212',
+                        'brand-accent': '#8E7B55',
+                        'brand-gray': '#707070',
                     },
                     fontFamily: {
-                        'serif': ['Playfair Display', 'serif'],
+                        'serif': ['Bodoni Moda', 'serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -29,6 +39,7 @@
         }
     </script>
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -36,23 +47,28 @@
 </head>
 <body class="bg-brand-bg text-brand-text font-sans antialiased">
 
-<nav class="fixed w-full z-50 py-6 px-8 flex justify-between items-center transition-all duration-300 mix-blend-difference text-white" id="navbar">
-    <a href="index.html" class="text-2xl font-serif tracking-tighter">OPTOTECH</a>
+<nav class="fixed w-full z-50 py-6 px-8 flex justify-between items-center transition-all duration-500 mix-blend-difference text-white" id="navbar">
+    <a href="index.html" class="flex items-center">
+        <img src="assets/logo.svg" alt="OPTOTECH LOGO" class="h-8 invert brightness-0">
+    </a>
 
     <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-12 text-xs uppercase tracking-widest font-medium">
-        <a href="index.html" class="hover:opacity-50 transition-opacity">Home</a>
+    <div class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-medium">
+        <a href="index.html" class="nav-link-active">Home</a>
         <a href="about.html" class="hover:opacity-50 transition-opacity">About</a>
         <div class="relative group">
-            <span class="cursor-pointer hover:opacity-50 transition-opacity flex items-center">Brands <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
-            <div class="absolute top-full left-0 mt-4 bg-white text-brand-text p-6 space-y-4 hidden group-hover:block min-w-[200px] shadow-xl">
-                <a href="bo-bo-noir.html" class="block hover:opacity-50 transition-opacity">Bo Bo Noir</a>
-                <a href="oliver-peoples.html" class="block hover:opacity-50 transition-opacity">Oliver Peoples</a>
-                <a href="mykita.html" class="block hover:opacity-50 transition-opacity">Mykita</a>
-                <a href="peter-and-may.html" class="block hover:opacity-50 transition-opacity">Peter and May</a>
+            <span class="cursor-pointer hover:opacity-50 transition-opacity flex items-center h-full">Brands <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 hidden group-hover:block min-w-[240px]">
+                <div class="bg-white text-brand-text p-8 space-y-4 shadow-2xl border-t-2 border-brand-accent">
+                    <a href="bo-bo-noir.html" class="block hover:text-brand-accent transition-colors">Bo Bo Noir</a>
+                <a href="oliver-peoples.html" class="block hover:text-brand-accent transition-colors">Oliver Peoples</a>
+                <a href="mykita.html" class="block hover:text-brand-accent transition-colors">Mykita</a>
+                <a href="peter-and-may.html" class="block hover:text-brand-accent transition-colors">Peter and May</a>
+                    <a href="sunshine.html" class="block hover:text-brand-accent transition-colors">Sunshine</a>
+                </div>
             </div>
         </div>
-        <a href="products.html" class="hover:opacity-50 transition-opacity">All Products</a>
+        <a href="products.html" class="hover:opacity-50 transition-opacity">Collections</a>
     </div>
 
     <!-- Mobile Menu Toggle -->
@@ -64,18 +80,19 @@
 </nav>
 
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-lg tracking-[0.2em] font-serif">
+<div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
-        <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full">
-            <span class="text-brand-gray text-[10px] tracking-widest mb-6 uppercase">Our Brands</span>
-            <a href="bo-bo-noir.html" class="mobile-nav-link text-sm mb-4 text-brand-text hover:text-brand-accent">Bo Bo Noir</a>
-            <a href="oliver-peoples.html" class="mobile-nav-link text-sm mb-4 text-brand-text hover:text-brand-accent">Oliver Peoples</a>
-            <a href="mykita.html" class="mobile-nav-link text-sm mb-4 text-brand-text hover:text-brand-accent">Mykita</a>
-            <a href="peter-and-may.html" class="mobile-nav-link text-sm mb-4 text-brand-text hover:text-brand-accent">Peter and May</a>
+        <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
+            <span class="text-brand-gray text-[10px] tracking-[0.4em] mb-6 uppercase">Our Brands</span>
+            <a href="bo-bo-noir.html" class="mobile-nav-link text-base mb-4 text-brand-text hover:text-brand-accent">Bo Bo Noir</a>
+            <a href="oliver-peoples.html" class="mobile-nav-link text-base mb-4 text-brand-text hover:text-brand-accent">Oliver Peoples</a>
+            <a href="mykita.html" class="mobile-nav-link text-base mb-4 text-brand-text hover:text-brand-accent">Mykita</a>
+            <a href="peter-and-may.html" class="mobile-nav-link text-base mb-4 text-brand-text hover:text-brand-accent">Peter and May</a>
+            <a href="sunshine.html" class="mobile-nav-link text-base text-brand-text hover:text-brand-accent">Sunshine</a>
         </div>
-        <a href="products.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">All Products</a>
+        <a href="products.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Collections</a>
     </div>
 </div>
 
@@ -83,180 +100,203 @@
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=2000"
-                 class="w-full h-full object-cover scale-110" alt="Luxury Eyewear Hero" id="hero-bg">
-            <div class="absolute inset-0 bg-black/20"></div>
+            <img src="https://images.unsplash.com/photo-1556306535-38febf6782e7?auto=format&fit=crop&q=80&w=2000"
+                 class="w-full h-full object-cover scale-110" alt="Premium Sunglasses Hero" id="hero-bg">
+            <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
         <div class="relative z-10 text-center text-white px-4">
-            <h1 class="text-7xl md:text-9xl font-serif mb-4 leading-tight fade-up">
-                See the Difference<br>
-                <span class="italic font-light">Be the Difference</span>
+            <h1 class="text-7xl md:text-[10rem] font-serif mb-4 leading-tight fade-up">
+                Eye Care<br>
+                <span class="italic font-light">Refined.</span>
             </h1>
-            <div class="mt-12 fade-up" style="transition-delay: 200ms;">
-                <a href="products.html" class="btn-outline !border-white !text-white hover:!bg-white hover:!text-brand-text">Explore Collection</a>
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-12 fade-up" style="transition-delay: 100ms;">Negombo's Finest Optical Destination</p>
+            <div class="fade-up" style="transition-delay: 300ms;">
+                <a href="products.html" class="btn-outline !border-white !text-white hover:!bg-white hover:!text-brand-text">View Collections</a>
             </div>
         </div>
 
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 text-[10px] uppercase tracking-[0.3em] font-medium fade-up">
-            Scroll to Discover
+            Scroll to Explore
         </div>
     </section>
 
-    <!-- Curated Signature Collection -->
-    <section class="section-padding px-8 max-w-7xl mx-auto">
-        <div class="mb-32">
-            <h2 class="text-xs uppercase tracking-[0.4em] text-brand-gray mb-6 fade-up">Signature Collection</h2>
-            <h3 class="text-5xl md:text-7xl font-serif max-w-2xl leading-tight fade-up">Handpicked frames for the modern visionary.</h3>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-40">
-            <!-- Block 1 -->
-            <div class="group cursor-pointer fade-up">
-                <div class="overflow-hidden mb-8 aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Collection 1">
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray mb-2 font-medium">Bo Bo Noir</p>
-                        <h4 class="text-2xl font-serif">Jane Series</h4>
-                    </div>
-                    <a href="products.html" class="text-[10px] uppercase tracking-widest font-semibold border-b border-brand-text pb-1">View Details</a>
-                </div>
-            </div>
-
-            <!-- Block 2 -->
-            <div class="group cursor-pointer pt-32 fade-up" style="transition-delay: 100ms;">
-                <div class="overflow-hidden mb-8 aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=1000"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Collection 2">
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray mb-2 font-medium">Oliver Peoples</p>
-                        <h4 class="text-2xl font-serif">Vintage Classic</h4>
-                    </div>
-                    <a href="products.html" class="text-[10px] uppercase tracking-widest font-semibold border-b border-brand-text pb-1">View Details</a>
-                </div>
-            </div>
-
-            <!-- Block 3 -->
-            <div class="group cursor-pointer fade-up">
-                <div class="overflow-hidden mb-8 aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1000"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Collection 3">
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray mb-2 font-medium">Mykita</p>
-                        <h4 class="text-2xl font-serif">Structural Lite</h4>
-                    </div>
-                    <a href="products.html" class="text-[10px] uppercase tracking-widest font-semibold border-b border-brand-text pb-1">View Details</a>
-                </div>
-            </div>
-
-            <!-- Block 4 -->
-            <div class="group cursor-pointer pt-32 fade-up" style="transition-delay: 100ms;">
-                <div class="overflow-hidden mb-8 aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1000"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Collection 4">
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray mb-2 font-medium">Peter and May</p>
-                        <h4 class="text-2xl font-serif">Parisian Edge</h4>
-                    </div>
-                    <a href="products.html" class="text-[10px] uppercase tracking-widest font-semibold border-b border-brand-text pb-1">View Details</a>
-                </div>
+    <!-- Partner Logos (Previously after signature) -->
+    <section class="py-24 bg-white border-b border-black/5">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-wrap justify-between items-center gap-12 opacity-30 hover:opacity-100 transition-opacity duration-1000 grayscale hover:grayscale-0">
+                <div class="text-center font-serif text-xl md:text-2xl tracking-tighter">BO BO NOIR</div>
+                <div class="text-center font-serif text-xl md:text-2xl tracking-tighter uppercase">Ray-Ban</div>
+                <div class="text-center font-serif text-xl md:text-2xl tracking-tighter">OLIVER PEOPLES</div>
+                <div class="text-center font-serif text-xl md:text-2xl tracking-tighter uppercase">Oakley</div>
+                <div class="text-center font-serif text-xl md:text-2xl tracking-tighter">MYKITA</div>
+                <div class="text-center font-serif text-xl md:text-2xl tracking-tighter">SUNSHINE</div>
             </div>
         </div>
     </section>
 
-    <!-- Brand Partners -->
-    <section class="section-padding bg-white px-8">
+    <!-- Signature Collections / Brands (Redesigned) -->
+    <section class="section-padding px-8 bg-[#FAF9F6]">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-xs uppercase tracking-[0.4em] text-brand-gray mb-6 fade-up">Our Partners</h2>
-                <h3 class="text-4xl md:text-5xl font-serif fade-up">Curating Excellence</h3>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-32 fade-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">Curated Brands</h2>
+                    <h3 class="text-5xl md:text-8xl font-serif leading-[1.1]">Signature Collections.</h3>
+                </div>
+                <p class="text-brand-gray text-xs uppercase tracking-[0.2em] mt-8 md:mt-0">Refining Negombo's Vision since 2010</p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-40 hover:opacity-100 transition-opacity duration-700 fade-up">
-                <div class="text-center font-serif text-2xl tracking-tighter">BO BO NOIR</div>
-                <div class="text-center font-serif text-2xl tracking-tighter">OLIVER PEOPLES</div>
-                <div class="text-center font-serif text-2xl tracking-tighter">MYKITA</div>
-                <div class="text-center font-serif text-2xl tracking-tighter">PETER AND MAY</div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand 1 -->
+                <a href="bo-bo-noir.html" class="group fade-up">
+                    <div class="overflow-hidden aspect-[3/4] mb-6">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Bo Bo Noir">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-serif mb-2">Bo Bo Noir</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-brand-gray">Portugal Craftsmanship</p>
+                    </div>
+                </a>
+
+                <!-- Brand 2 -->
+                <a href="oliver-peoples.html" class="group fade-up" style="transition-delay: 100ms;">
+                    <div class="overflow-hidden aspect-[3/4] mb-6">
+                        <img src="https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=1000"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Oliver Peoples">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-serif mb-2">Oliver Peoples</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-brand-gray">Vintage California</p>
+                    </div>
+                </a>
+
+                <!-- Brand 3 -->
+                <a href="mykita.html" class="group fade-up" style="transition-delay: 200ms;">
+                    <div class="overflow-hidden aspect-[3/4] mb-6">
+                        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1000"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Mykita">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-serif mb-2">Mykita</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-brand-gray">Berlin Precision</p>
+                    </div>
+                </a>
+
+                <!-- Brand 4 -->
+                <a href="sunshine.html" class="group fade-up" style="transition-delay: 300ms;">
+                    <div class="overflow-hidden aspect-[3/4] mb-6">
+                        <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1000"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Sunshine">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-serif mb-2">Sunshine</h4>
+                        <p class="text-[10px] uppercase tracking-widest text-brand-gray">Vibrant Colors</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Optical Services Section -->
-    <section class="section-padding px-8">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            <div class="fade-up">
-                <img src="https://images.unsplash.com/photo-1596708051770-07e36611f7c1?auto=format&fit=crop&q=80&w=1000"
-                     class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000" alt="Optical Services">
+    <!-- Services -->
+    <section class="section-padding px-8 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="relative fade-up">
+                <img src="https://images.unsplash.com/photo-1596708051770-07e36611f7c1?auto=format&fit=crop&q=80&w=1200"
+                     class="w-full h-[600px] object-cover grayscale" alt="Optical Services Negombo">
+                <div class="absolute -bottom-12 -right-12 w-64 h-64 bg-brand-bg hidden lg:block p-8 flex items-center justify-center border border-black/5">
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-center leading-relaxed">Advanced Clinical Care & Style Consultation</p>
+                </div>
             </div>
-            <div class="space-y-10">
-                <h2 class="text-xs uppercase tracking-[0.4em] text-brand-gray fade-up">Services</h2>
-                <h3 class="text-5xl md:text-6xl font-serif leading-tight fade-up">Precision and Care for Your Vision.</h3>
-                <p class="text-brand-gray leading-relaxed max-w-md fade-up">
-                    From premium eye testing to retail and wholesale distributions, we provide a full spectrum of optical solutions with a commitment to quality and fashion.
+            <div class="space-y-12 fade-up">
+                <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent">Excellence</h2>
+                <h3 class="text-5xl md:text-7xl font-serif leading-tight">Visionary Services for a Modern Life.</h3>
+                <p class="text-brand-gray leading-relaxed max-w-lg">
+                    In our Negombo studio, we merge state-of-the-art diagnostic technology with an editorial eye for fashion. Whether you are seeking a wholesale partnership or a bespoke individual consultation, we provide an unparalleled optical experience in Sri Lanka.
                 </p>
-                <ul class="space-y-6 text-sm uppercase tracking-widest font-medium fade-up">
-                    <li class="flex items-center space-x-4">
-                        <span class="w-8 h-[1px] bg-brand-text"></span>
-                        <span>Comprehensive Eye Exams</span>
-                    </li>
-                    <li class="flex items-center space-x-4">
-                        <span class="w-8 h-[1px] bg-brand-text"></span>
-                        <span>Bespoke Frame Fitting</span>
-                    </li>
-                    <li class="flex items-center space-x-4">
-                        <span class="w-8 h-[1px] bg-brand-text"></span>
-                        <span>Wholesale Distribution</span>
-                    </li>
-                </ul>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-6">
+                        <span class="text-brand-accent font-serif text-2xl italic">01.</span>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest mb-2 font-bold">Premium Eye Testing</h4>
+                            <p class="text-xs text-brand-gray leading-relaxed">Clinical precision using the latest optical machinery.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <span class="text-brand-accent font-serif text-2xl italic">02.</span>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest mb-2 font-bold">Retail & Wholesale</h4>
+                            <p class="text-xs text-brand-gray leading-relaxed">Distributing luxury frames across Sri Lanka.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <span class="text-brand-accent font-serif text-2xl italic">03.</span>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest mb-2 font-bold">Bespoke Styling</h4>
+                            <p class="text-xs text-brand-gray leading-relaxed">Personalized frame selection to match your facial geometry.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Optotech -->
-    <section class="section-padding bg-brand-accent text-white px-8">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-20">
-            <div class="fade-up">
-                <h3 class="text-3xl font-serif mb-6">Unrivaled Quality</h3>
-                <p class="text-white/60 text-sm leading-relaxed">We source only the finest materials and partner with world-renowned designers to ensure every frame meets our high standards.</p>
+    <section class="section-padding bg-brand-text text-white px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+                <div class="fade-up">
+                    <h3 class="text-3xl font-serif mb-8 text-brand-accent italic">Quality.</h3>
+                    <p class="text-white/40 text-xs leading-relaxed uppercase tracking-widest">Handcrafted frames from international ateliers. No compromise on materials.</p>
+                </div>
+                <div class="fade-up" style="transition-delay: 100ms;">
+                    <h3 class="text-3xl font-serif mb-8 text-brand-accent italic">Heritage.</h3>
+                    <p class="text-white/40 text-xs leading-relaxed uppercase tracking-widest">A legacy of optical excellence in Negombo, trusted by generations.</p>
+                </div>
+                <div class="fade-up" style="transition-delay: 200ms;">
+                    <h3 class="text-3xl font-serif mb-8 text-brand-accent italic">Precision.</h3>
+                    <p class="text-white/40 text-xs leading-relaxed uppercase tracking-widest">Accuracy in every lens, ensuring your vision is never compromised.</p>
+                </div>
             </div>
-            <div class="fade-up" style="transition-delay: 100ms;">
-                <h3 class="text-3xl font-serif mb-6">Expert Precision</h3>
-                <p class="text-white/60 text-sm leading-relaxed">Our clinical experts use state-of-the-art technology to provide the most accurate prescriptions and fitting services in Sri Lanka.</p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-24 px-8 bg-[#FAF9F6]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-16 fade-up">
+                <h2 class="text-4xl font-serif">Visit our Negombo Studio.</h2>
+                <a href="https://goo.gl/maps/example" target="_blank" class="text-[10px] uppercase tracking-widest border-b border-brand-text pb-1 mt-6 md:mt-0">Open in Google Maps</a>
             </div>
-            <div class="fade-up" style="transition-delay: 200ms;">
-                <h3 class="text-3xl font-serif mb-6">Fashion Forward</h3>
-                <p class="text-white/60 text-sm leading-relaxed">We don't just sell glasses; we curate a style that complements your unique personality and fashion aesthetic.</p>
+            <div class="h-[500px] w-full bg-gray-200 grayscale fade-up">
+                <!-- In a real scenario, use a Google Maps Embed or a high-end stylized image -->
+                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Map of Negombo">
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-20 px-8 border-t border-black/5">
+    <footer class="py-20 px-8 border-t border-black/5 bg-white">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-12 md:space-y-0">
-            <div class="space-y-6">
-                <a href="index.html" class="text-2xl font-serif tracking-tighter">OPTOTECH</a>
-                <p class="text-brand-gray text-xs max-w-xs leading-relaxed">Negombo's premier luxury optical destination. Excellence in vision and style since inception.</p>
+            <div class="space-y-8">
+                <img src="assets/logo.svg" alt="OPTOTECH" class="h-6">
+                <p class="text-brand-gray text-[10px] max-w-xs leading-relaxed uppercase tracking-widest">
+                    68 Main Street, Negombo, Sri Lanka.<br>
+                    Excellence in vision and style since 2010.
+                </p>
             </div>
-            <div class="grid grid-cols-2 gap-20">
-                <div class="space-y-4">
-                    <h4 class="text-[10px] uppercase tracking-widest font-bold">Navigation</h4>
-                    <ul class="text-xs space-y-2 text-brand-gray uppercase tracking-widest">
+            <div class="grid grid-cols-2 gap-24">
+                <div class="space-y-6">
+                    <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-accent">Navigation</h4>
+                    <ul class="text-[10px] space-y-3 text-brand-gray uppercase tracking-widest">
                         <li><a href="index.html" class="hover:text-brand-text transition-colors">Home</a></li>
                         <li><a href="about.html" class="hover:text-brand-text transition-colors">About</a></li>
-                        <li><a href="products.html" class="hover:text-brand-text transition-colors">Collection</a></li>
+                        <li><a href="products.html" class="hover:text-brand-text transition-colors">Collections</a></li>
                     </ul>
                 </div>
-                <div class="space-y-4">
-                    <h4 class="text-[10px] uppercase tracking-widest font-bold">Connect</h4>
-                    <ul class="text-xs space-y-2 text-brand-gray uppercase tracking-widest">
+                <div class="space-y-6">
+                    <h4 class="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-accent">Connect</h4>
+                    <ul class="text-[10px] space-y-3 text-brand-gray uppercase tracking-widest">
                         <li><a href="#" class="hover:text-brand-text transition-colors">Instagram</a></li>
                         <li><a href="#" class="hover:text-brand-text transition-colors">WhatsApp</a></li>
                         <li><a href="#" class="hover:text-brand-text transition-colors">Location</a></li>
@@ -264,9 +304,9 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-black/5 flex justify-between items-center text-[10px] uppercase tracking-widest text-brand-gray">
-            <p>&copy; 2025 Optotech.lk. All Rights Reserved.</p>
-            <p>Designed for Excellence</p>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center text-[8px] uppercase tracking-[0.4em] text-brand-gray">
+            <p>&copy; 2025 Optotech.lk. Negombo, Sri Lanka.</p>
+            <p class="mt-4 md:mt-0">Crafted for Luxury</p>
         </div>
     </footer>
 </main>

@@ -1,58 +1,98 @@
 [
     {
+        "id": 1,
         "brand": "BO BO NOIR",
-        "name": "Jane",
+        "model": "AVANT-GARDE 01",
         "price": "LKR 45,000",
-        "description": "Bold rectangular silhouette crafted in premium Italian acetate.",
-        "image": "https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=800"
+        "description": "Bold geometric silhouette in hand-polished Portuguese acetate.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000"
     },
     {
+        "id": 2,
         "brand": "OLIVER PEOPLES",
-        "name": "Gregory Peck",
-        "price": "LKR 52,000",
-        "description": "Iconic vintage-inspired frame with a classic keyhole bridge.",
-        "image": "https://images.unsplash.com/photo-1551443874-3259b3503f27?auto=format&fit=crop&q=80&w=800"
+        "model": "GREGORY PECK",
+        "price": "LKR 58,500",
+        "description": "Iconic vintage-inspired frame with classic tortoiseshell finish.",
+        "image": "https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=1000"
     },
     {
+        "id": 3,
         "brand": "MYKITA",
-        "name": "Lite",
-        "price": "LKR 68,000",
-        "description": "Ultra-lightweight stainless steel frame with patented hinge technology.",
-        "image": "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        "brand": "PETER AND MAY",
-        "name": "Parisian",
-        "price": "LKR 48,000",
-        "description": "Refined French design blending modern edge with timeless elegance.",
-        "image": "https://images.unsplash.com/photo-1516035054744-d474c5209db5?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        "brand": "BO BO NOIR",
-        "name": "William",
-        "price": "LKR 42,000",
-        "description": "Classic round frame featuring a minimalist structural design.",
-        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        "brand": "OLIVER PEOPLES",
-        "name": "O'Malley",
-        "price": "LKR 55,000",
-        "description": "Understated luxury with handcrafted details and superior optics.",
-        "image": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        "brand": "MYKITA",
-        "name": "Decades",
+        "model": "LITE ERLA",
         "price": "LKR 72,000",
-        "description": "Architectural eyewear reimagined for the contemporary individual.",
-        "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800"
+        "description": "Ultra-lightweight stainless steel frame with patented screwless hinge.",
+        "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1000"
     },
     {
+        "id": 4,
         "brand": "PETER AND MAY",
-        "name": "Studio",
-        "price": "LKR 50,000",
-        "description": "Oversized proportions meets matte finishes for a bold statement.",
-        "image": "https://images.unsplash.com/photo-1502767089025-6572583495f9?auto=format&fit=crop&q=80&w=800"
+        "model": "PARISIAN NIGHT",
+        "price": "LKR 52,000",
+        "description": "Sophisticated French design with a modern architectural edge.",
+        "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 5,
+        "brand": "RAY-BAN",
+        "model": "WAYFARER CLASSIC",
+        "price": "LKR 38,000",
+        "description": "The world's most recognizable style of sunglasses.",
+        "image": "https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 6,
+        "brand": "SUNSHINE",
+        "model": "COLOR WAVE - ROSE",
+        "price": "LKR 28,000",
+        "description": "Vibrant rose-tinted lenses with a playful gold-tone frame.",
+        "image": "https://images.unsplash.com/photo-1574258495973-f016dfbb5371?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 7,
+        "brand": "SUNSHINE",
+        "model": "COLOR WAVE - AZURE",
+        "price": "LKR 28,000",
+        "description": "Deep blue polarized lenses for maximum clarity and style.",
+        "image": "https://images.unsplash.com/photo-1625591339762-431203277a81?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 8,
+        "brand": "RAY-BAN",
+        "model": "AVIATOR METAL",
+        "price": "LKR 42,000",
+        "description": "Timeless teardrop shape, originally designed for U.S. aviators.",
+        "image": "https://images.unsplash.com/photo-1572533562304-732d01ffc46a?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 9,
+        "brand": "OAKLEY",
+        "model": "HOLBROOK",
+        "price": "LKR 35,000",
+        "description": "Performance meets style with a classic American frame design.",
+        "image": "https://images.unsplash.com/photo-1563903530908-afdd155d057a?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 10,
+        "brand": "SUNSHINE",
+        "model": "COLOR WAVE - AMBER",
+        "price": "LKR 28,000",
+        "description": "Warm amber tones perfect for golden hour aesthetics.",
+        "image": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 11,
+        "brand": "BO BO NOIR",
+        "model": "MINIMALIST 04",
+        "price": "LKR 48,000",
+        "description": "Exquisite matte black finish with high-density polarized lenses.",
+        "image": "https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": 12,
+        "brand": "SUNSHINE",
+        "model": "COLOR WAVE - EMERALD",
+        "price": "LKR 28,000",
+        "description": "Striking green lenses with a lightweight titanium bridge.",
+        "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1000"
     }
 ]
