@@ -1,0 +1,28 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0E0F14;
+    color: #fff;
+}
+.navbar {
+    background: rgba(0,0,0,0.8);
+}
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card {
+    background: #1a1c22;
+    border: none;
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+}
