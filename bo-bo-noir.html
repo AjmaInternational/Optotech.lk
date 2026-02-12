@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,13 +15,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#FAF9F6',
-                        'brand-text': '#121212',
-                        'brand-accent': '#8E7B55',
-                        'brand-gray': '#707070',
+                        'brand-bg': '#F6F6F4',
+                        'brand-text': '#111111',
+                        'brand-accent': '#1E2A44',
+                        'brand-gray': '#B8B8B8',
                     },
                     fontFamily: {
-                        'serif': ['Bodoni Moda', 'serif'],
+                        'heading': ['Playfair Display', 'sans-serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -68,7 +68,7 @@
 
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-heading">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
         <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
@@ -90,30 +90,39 @@
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 text-center text-white max-w-4xl px-8">
             <h2 class="text-xs uppercase tracking-[0.6em] mb-6 fade-up">Portuguese Heritage</h2>
-            <h1 class="text-7xl md:text-[9rem] font-serif fade-up mb-8" style="transition-delay: 100ms;">Bo Bo Noir</h1>
+            <h1 class="text-7xl md:text-[9rem] font-heading fade-up mb-8" style="transition-delay: 100ms;">Bo Bo Noir</h1>
             <p class="text-xs uppercase tracking-[0.3em] opacity-70 leading-relaxed fade-up" style="transition-delay: 200ms;">Handcrafted in Portugal with a commitment to sustainable elegance and dark-toned aesthetics.</p>
         </div>
     </header>
 
-    <section class="section-padding px-8 bg-white">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div class="fade-up">
-                <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">Philosophy</h2>
-                <h3 class="text-5xl md:text-7xl font-serif leading-tight mb-8">The Beauty of Shadow.</h3>
-                <p class="text-brand-gray leading-relaxed mb-12 uppercase text-xs tracking-widest">Bo Bo Noir explores the intersection of traditional craftsmanship and avant-garde design. Every frame is a testament to the artisan's touch.</p>
-                <div class="aspect-[4/5] overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1591076482161-421a3aaee5f4?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover grayscale" alt="Bo Bo Noir Detail">
+    <section class="section-padding px-8 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                <!-- Left: Stacked Cards -->
+                <div class="lg:col-span-4 flex flex-col space-y-12">
+                    <div class="fade-up bg-[#F6F6F4] p-12 rounded-[3rem] text-center group">
+                        <div class="aspect-square mb-8 overflow-hidden rounded-2xl">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=600"
+                                 class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" alt="Frame 01">
+                        </div>
+                        <h4 class="text-[10px] font-heading mb-2 tracking-[0.2em]">REUNION | THE SANDMAN</h4>
+                        <p class="text-[10px] text-brand-gray uppercase tracking-widest">Matte Black</p>
+                    </div>
+                    <div class="fade-up bg-[#F6F6F4] p-12 rounded-[3rem] text-center group" style="transition-delay: 100ms;">
+                        <div class="aspect-square mb-8 overflow-hidden rounded-2xl">
+                            <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=600"
+                                 class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" alt="Frame 02">
+                        </div>
+                        <h4 class="text-[10px] font-heading mb-2 tracking-[0.2em]">SANDMAN | THE REUNION</h4>
+                        <p class="text-[10px] text-brand-gray uppercase tracking-widest">Dark Tortoise</p>
+                    </div>
                 </div>
-            </div>
-            <div class="fade-up space-y-12" style="transition-delay: 200ms;">
-                <div class="aspect-[3/4] overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover" alt="Bo Bo Noir Lifestyle">
-                </div>
-                <div class="bg-brand-bg p-12">
-                    <h4 class="text-xl font-serif mb-6 italic">"A frame should not hide the face, but define the soul behind it."</h4>
-                    <p class="text-[10px] uppercase tracking-widest text-brand-gray leading-loose">
-                        Combining Portuguese cork elements with Italian acetates, Bo Bo Noir creates a sensory experience that is as much about feel as it is about vision. Available exclusively at Optotech for the Negombo region.
-                    </p>
+                <!-- Right: Large Lifestyle -->
+                <div class="lg:col-span-8 fade-up" style="transition-delay: 200ms;">
+                    <div class="h-full min-h-[600px] overflow-hidden rounded-[3rem]">
+                        <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1200"
+                             class="w-full h-full object-cover grayscale contrast-125" alt="Bo Bo Noir Lifestyle">
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-    --bg-color: #FAF9F6;
-    --text-color: #121212;
-    --accent-color: #8E7B55;
-    --gray-color: #707070;
+    --bg-color: #F6F6F4;
+    --text-color: #111111;
+    --accent-color: #1E2A44;
+    --gray-color: #B8B8B8;
 }
 
 * {
@@ -20,8 +20,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, .font-serif {
-    font-family: 'Bodoni Moda', serif;
+h1, h2, h3, h4, .font-heading {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 
 .section-padding {
@@ -29,22 +30,22 @@ h1, h2, h3, h4, .font-serif {
     padding-bottom: 10rem;
 }
 
-/* Custom Cursor or other luxury elements could go here */
-
 .btn-outline {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 1.25rem 3rem;
     border: 1px solid var(--text-color);
     text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    font-weight: 500;
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    border-radius: 9999px;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-outline:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
+    transform: translateY(-2px);
 }
 
 /* Animations */

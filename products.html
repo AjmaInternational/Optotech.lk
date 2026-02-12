@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,13 +18,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#FAF9F6',
-                        'brand-text': '#121212',
-                        'brand-accent': '#8E7B55',
-                        'brand-gray': '#707070',
+                        'brand-bg': '#F6F6F4',
+                        'brand-text': '#111111',
+                        'brand-accent': '#1E2A44',
+                        'brand-gray': '#B8B8B8',
                     },
                     fontFamily: {
-                        'serif': ['Bodoni Moda', 'serif'],
+                        'heading': ['Playfair Display', 'sans-serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -72,7 +72,7 @@
 
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-heading">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
         <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
@@ -90,7 +90,7 @@
 <main id="main-content" class="pt-48 pb-24 px-8">
     <div class="max-w-7xl mx-auto">
         <header class="mb-24 text-center">
-            <h1 class="text-6xl md:text-9xl font-serif mb-8 fade-up">Our Collections</h1>
+            <h1 class="text-6xl md:text-9xl font-heading mb-8 fade-up">Our Collections</h1>
             <p class="text-brand-gray text-[10px] uppercase tracking-[0.5em] fade-up">Curated Eyewear for the Visionary</p>
         </header>
 

@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,13 +15,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#FAF9F6',
-                        'brand-text': '#121212',
-                        'brand-accent': '#8E7B55',
-                        'brand-gray': '#707070',
+                        'brand-bg': '#F6F6F4',
+                        'brand-text': '#111111',
+                        'brand-accent': '#1E2A44',
+                        'brand-gray': '#B8B8B8',
                     },
                     fontFamily: {
-                        'serif': ['Bodoni Moda', 'serif'],
+                        'heading': ['Playfair Display', 'sans-serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -68,7 +68,7 @@
 
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-heading">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
         <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
@@ -90,41 +90,43 @@
         <div class="absolute inset-0 bg-black/30"></div>
         <div class="relative z-10 text-center text-white px-8">
             <h2 class="text-xs uppercase tracking-[0.6em] mb-6 fade-up">Vintage Hollywood</h2>
-            <h1 class="text-7xl md:text-[8rem] font-serif fade-up mb-8" style="transition-delay: 100ms;">Oliver Peoples</h1>
+            <h1 class="text-7xl md:text-[8rem] font-heading fade-up mb-8" style="transition-delay: 100ms;">Oliver Peoples</h1>
             <p class="text-[10px] uppercase tracking-[0.5em] opacity-80 fade-up" style="transition-delay: 200ms;">Los Angeles, California</p>
         </div>
     </header>
 
-    <section class="section-padding px-8 bg-white">
+    <section class="section-padding px-8 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-32">
-                <div class="lg:col-span-2 fade-up">
-                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1600" class="w-full h-[500px] object-cover" alt="Oliver Peoples Campaign">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                <!-- Left: Stacked Cards -->
+                <div class="lg:col-span-4 flex flex-col space-y-12">
+                    <div class="fade-up bg-[#F6F6F4] p-12 rounded-[3rem] text-center group">
+                        <div class="aspect-square mb-8 overflow-hidden rounded-2xl">
+                            <img src="https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=600"
+                                 class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" alt="Oliver Peoples 01">
+                        </div>
+                        <h4 class="text-[10px] font-heading mb-2 tracking-[0.2em]">OLIVER PEOPLES | GREGORY PECK</h4>
+                        <p class="text-[10px] text-brand-gray uppercase tracking-widest">Crystal Gray</p>
+                    </div>
+                    <div class="fade-up bg-[#F6F6F4] p-12 rounded-[3rem] text-center group" style="transition-delay: 100ms;">
+                        <div class="aspect-square mb-8 overflow-hidden rounded-2xl">
+                            <img src="https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=600"
+                                 class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" alt="Oliver Peoples 02">
+                        </div>
+                        <h4 class="text-[10px] font-heading mb-2 tracking-[0.2em]">OLIVER PEOPLES | O'MALLEY</h4>
+                        <p class="text-[10px] text-brand-gray uppercase tracking-widest">Amber Tortoise</p>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-center fade-up" style="transition-delay: 200ms;">
-                    <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-6">The Legacy</h2>
-                    <h3 class="text-4xl font-serif leading-tight mb-8">Authentic & Timeless.</h3>
-                    <p class="text-brand-gray text-sm leading-relaxed mb-8 uppercase tracking-widest">Born in the heart of West Hollywood, Oliver Peoples remains one of the most prestigious eyewear brands in the world.</p>
-                    <p class="text-brand-gray text-xs leading-relaxed uppercase tracking-widest">With a focus on subtle details and vintage-inspired aesthetics, the collection is devoid of overt logos, allowing the quality of the frame to speak for itself.</p>
+                <!-- Right: Large Lifestyle -->
+                <div class="lg:col-span-8 fade-up" style="transition-delay: 200ms;">
+                    <div class="h-full min-h-[600px] overflow-hidden rounded-[3rem]">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1200"
+                             class="w-full h-full object-cover grayscale brightness-95" alt="Oliver Peoples Campaign">
+                    </div>
                 </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center fade-up">
-                <div class="order-2 md:order-1">
-                    <h4 class="text-xs uppercase tracking-[0.4em] text-brand-accent mb-6 font-bold">Cinematic Presence</h4>
-                    <p class="text-xl font-serif italic mb-8 leading-relaxed">"From the silver screen to the streets of Negombo, Oliver Peoples defines the classic modern look."</p>
-                    <div class="space-y-4">
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray border-b border-black/5 pb-4">Gregory Peck Collection</p>
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray border-b border-black/5 pb-4">O'Malley Iconic Series</p>
-                        <p class="text-[10px] uppercase tracking-widest text-brand-gray border-b border-black/5 pb-4">The Row Collaboration</p>
-                    </div>
-                    <div class="mt-12">
-                        <a href="products.html" class="btn-outline">Inquire Collection</a>
-                    </div>
-                </div>
-                <div class="order-1 md:order-2 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=1000" class="w-full h-[600px] object-cover hover:scale-105 transition-transform duration-1000" alt="Oliver Peoples Frames">
-                </div>
+            <div class="mt-24 text-center">
+                <a href="products.html" class="btn-outline">Explore Full Collection</a>
             </div>
         </div>
     </section>

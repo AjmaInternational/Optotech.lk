@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,13 +15,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#FAF9F6',
-                        'brand-text': '#121212',
-                        'brand-accent': '#8E7B55',
-                        'brand-gray': '#707070',
+                        'brand-bg': '#F6F6F4',
+                        'brand-text': '#111111',
+                        'brand-accent': '#1E2A44',
+                        'brand-gray': '#B8B8B8',
                     },
                     fontFamily: {
-                        'serif': ['Bodoni Moda', 'serif'],
+                        'heading': ['Playfair Display', 'sans-serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -68,7 +68,7 @@
 
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-heading">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
         <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
@@ -90,55 +90,41 @@
         <div class="absolute inset-0 bg-black/20"></div>
         <div class="relative z-10 text-center text-white">
             <h2 class="text-xs uppercase tracking-[0.6em] mb-6 fade-up">Vibrant Aesthetics</h2>
-            <h1 class="text-7xl md:text-[9rem] font-serif fade-up" style="transition-delay: 100ms;">Sunshine</h1>
+            <h1 class="text-7xl md:text-[9rem] font-heading fade-up" style="transition-delay: 100ms;">Sunshine</h1>
         </div>
     </header>
 
     <!-- Color Wave Showcase -->
-    <section class="section-padding px-8 bg-white">
+    <section class="section-padding px-8 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-24 fade-up">
-                <div class="max-w-2xl">
-                    <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">The Collection</h2>
-                    <h3 class="text-5xl md:text-7xl font-serif leading-tight">Five Colors. One Vision.</h3>
-                </div>
-                <p class="text-brand-gray text-xs uppercase tracking-[0.2em] mt-8 md:mt-0 max-w-xs leading-relaxed">Introducing the Color Wave series. Designed for those who embrace the spectrum.</p>
-            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div class="fade-up">
+                    <h2 class="text-5xl md:text-7xl font-heading leading-tight mb-8">Sunshine</h2>
+                    <p class="text-brand-gray leading-relaxed mb-12 uppercase text-[10px] tracking-widest max-w-md">
+                        Combining Portuguese cork elements with Italian acetates, Sunshine creates a sensory experience that is as much about feel as it is about vision.
+                    </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                <div class="group fade-up overflow-hidden h-[500px] relative">
-                    <img src="https://images.unsplash.com/photo-1574258495973-f016dfbb5371?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Rose">
-                    <div class="absolute inset-0 bg-brand-text/20 group-hover:bg-transparent transition-colors"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <p class="text-[10px] uppercase tracking-widest font-bold">01. Rose</p>
+                    <div class="space-y-6 mt-12">
+                        <p class="font-heading italic text-3xl text-brand-accent">choose the frame color</p>
+                        <div class="flex space-x-6" id="color-switcher">
+                            <button class="w-10 h-10 rounded-full border-2 border-brand-accent transition-all color-btn active"
+                                    style="background-color: #B2D8E5;" data-color="blue" data-img="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-transparent hover:border-brand-accent transition-all color-btn"
+                                    style="background-color: #F8D7DA;" data-color="pink" data-img="https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=800"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-transparent hover:border-brand-accent transition-all color-btn"
+                                    style="background-color: #FFF5E1;" data-color="cream" data-img="https://images.unsplash.com/photo-1591076482161-421a3aaee5f4?auto=format&fit=crop&q=80&w=800"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-transparent hover:border-brand-accent transition-all color-btn"
+                                    style="background-color: #C3CFBB;" data-color="sage" data-img="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-transparent hover:border-brand-accent transition-all color-btn"
+                                    style="background-color: #E29E65;" data-color="amber" data-img="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=800"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="group fade-up overflow-hidden h-[500px] relative" style="transition-delay: 100ms;">
-                    <img src="https://images.unsplash.com/photo-1625591339762-431203277a81?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Azure">
-                    <div class="absolute inset-0 bg-brand-text/20 group-hover:bg-transparent transition-colors"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <p class="text-[10px] uppercase tracking-widest font-bold">02. Azure</p>
-                    </div>
-                </div>
-                <div class="group fade-up overflow-hidden h-[500px] relative" style="transition-delay: 200ms;">
-                    <img src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Amber">
-                    <div class="absolute inset-0 bg-brand-text/20 group-hover:bg-transparent transition-colors"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <p class="text-[10px] uppercase tracking-widest font-bold">03. Amber</p>
-                    </div>
-                </div>
-                <div class="group fade-up overflow-hidden h-[500px] relative" style="transition-delay: 300ms;">
-                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Emerald">
-                    <div class="absolute inset-0 bg-brand-text/20 group-hover:bg-transparent transition-colors"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <p class="text-[10px] uppercase tracking-widest font-bold">04. Emerald</p>
-                    </div>
-                </div>
-                <div class="group fade-up overflow-hidden h-[500px] relative" style="transition-delay: 400ms;">
-                    <img src="https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Midnight">
-                    <div class="absolute inset-0 bg-brand-text/20 group-hover:bg-transparent transition-colors"></div>
-                    <div class="absolute bottom-8 left-8 text-white">
-                        <p class="text-[10px] uppercase tracking-widest font-bold">05. Midnight</p>
+
+                <div class="fade-up" style="transition-delay: 200ms;">
+                    <div class="aspect-square overflow-hidden rounded-[4rem] bg-[#F6F6F4] p-16 flex items-center justify-center">
+                        <img id="main-product-img" src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                             class="w-full h-full object-contain transition-all duration-500" alt="Sunshine Frame">
                     </div>
                 </div>
             </div>
@@ -148,6 +134,34 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btns = document.querySelectorAll('.color-btn');
+            const mainImg = document.getElementById('main-product-img');
+
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class
+                    btns.forEach(b => b.classList.remove('active', 'border-brand-accent'));
+                    btns.forEach(b => b.classList.add('border-transparent'));
+
+                    // Add active class
+                    btn.classList.add('active', 'border-brand-accent');
+                    btn.classList.remove('border-transparent');
+
+                    // Change image with fade effect
+                    mainImg.style.opacity = '0';
+                    mainImg.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        mainImg.src = btn.getAttribute('data-img');
+                        mainImg.style.opacity = '1';
+                        mainImg.style.transform = 'scale(1)';
+                    }, 300);
+                });
+            });
+        });
+    </script>
 </main>
 
 <footer class="py-20 px-8 border-t border-black/5 bg-white">

@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,13 +18,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#FAF9F6',
-                        'brand-text': '#121212',
-                        'brand-accent': '#8E7B55',
-                        'brand-gray': '#707070',
+                        'brand-bg': '#F6F6F4',
+                        'brand-text': '#111111',
+                        'brand-accent': '#1E2A44',
+                        'brand-gray': '#B8B8B8',
                     },
                     fontFamily: {
-                        'serif': ['Bodoni Moda', 'serif'],
+                        'heading': ['Playfair Display', 'sans-serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -72,7 +72,7 @@
 
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-heading">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
         <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
@@ -95,46 +95,48 @@
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 text-center text-white">
             <h2 class="text-xs uppercase tracking-[0.6em] mb-6 fade-up">Our Heritage</h2>
-            <h1 class="text-7xl md:text-[8rem] font-serif fade-up" style="transition-delay: 100ms;">Defining Vision.</h1>
+            <h1 class="text-7xl md:text-[8rem] font-heading fade-up" style="transition-delay: 100ms;">Defining Vision.</h1>
         </div>
     </header>
 
     <!-- Our Philosophy -->
-    <section class="section-padding px-8">
+    <section class="section-padding px-8 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                 <div class="fade-up">
                     <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">Philosophy</h2>
-                    <h3 class="text-5xl md:text-7xl font-serif mb-12 leading-tight">Clarity Meets Character.</h3>
-                    <p class="text-brand-gray leading-relaxed max-w-md">
+                    <h3 class="text-5xl md:text-7xl font-heading mb-12 leading-tight tracking-tighter">Clarity Meets Character.</h3>
+                    <p class="text-brand-gray leading-relaxed max-w-md uppercase text-[10px] tracking-widest">
                         At Optotech, we believe that eyewear is the most intimate accessory. It is the lens through which you see the world, and the frame through which the world sees you. Based in the heart of Negombo, we have dedicated over a decade to refining this intersection of clinical precision and personal style.
                     </p>
                 </div>
                 <div class="fade-up" style="transition-delay: 200ms;">
-                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1200"
-                         class="w-full aspect-[3/4] object-cover" alt="Fashion Optical">
+                    <div class="rounded-[4rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1200"
+                             class="w-full aspect-[3/4] object-cover" alt="Fashion Optical">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Heritage & Precision -->
-    <section class="py-32 px-8 bg-brand-text text-white">
+    <section class="py-32 px-8 bg-brand-accent text-white rounded-t-[5rem]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-20">
             <div class="fade-up">
-                <span class="text-brand-accent font-serif text-5xl italic block mb-8">2010</span>
-                <h4 class="text-xl font-serif mb-6">Established in Negombo</h4>
-                <p class="text-white/40 text-xs leading-relaxed uppercase tracking-widest">Founded with a mission to bring international eyewear standards to Sri Lanka.</p>
+                <span class="text-[#F6F6F4] font-heading text-5xl italic block mb-8">2010</span>
+                <h4 class="text-xl font-heading mb-6 tracking-tight">Established in Negombo</h4>
+                <p class="text-white/60 text-[10px] leading-relaxed uppercase tracking-widest">Founded with a mission to bring international eyewear standards to Sri Lanka.</p>
             </div>
             <div class="fade-up" style="transition-delay: 100ms;">
-                <span class="text-brand-accent font-serif text-5xl italic block mb-8">Precision</span>
-                <h4 class="text-xl font-serif mb-6">Advanced Diagnostics</h4>
-                <p class="text-white/40 text-xs leading-relaxed uppercase tracking-widest">Equipped with the latest clinical technology for unmatched prescription accuracy.</p>
+                <span class="text-[#F6F6F4] font-heading text-5xl italic block mb-8">Precision</span>
+                <h4 class="text-xl font-heading mb-6 tracking-tight">Advanced Diagnostics</h4>
+                <p class="text-white/60 text-[10px] leading-relaxed uppercase tracking-widest">Equipped with the latest clinical technology for unmatched prescription accuracy.</p>
             </div>
             <div class="fade-up" style="transition-delay: 200ms;">
-                <span class="text-brand-accent font-serif text-5xl italic block mb-8">Curation</span>
-                <h4 class="text-xl font-serif mb-6">Editorial Selection</h4>
-                <p class="text-white/40 text-xs leading-relaxed uppercase tracking-widest">Every frame in our studio is hand-selected from the world's leading design houses.</p>
+                <span class="text-[#F6F6F4] font-heading text-5xl italic block mb-8">Curation</span>
+                <h4 class="text-xl font-heading mb-6 tracking-tight">Editorial Selection</h4>
+                <p class="text-white/60 text-[10px] leading-relaxed uppercase tracking-widest">Every frame in our studio is hand-selected from the world's leading design houses.</p>
             </div>
         </div>
     </section>
@@ -144,7 +146,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-24 fade-up">
                 <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">The Experience</h2>
-                <h3 class="text-5xl md:text-8xl font-serif">The Precision Clinic.</h3>
+                <h3 class="text-5xl md:text-8xl font-heading">The Precision Clinic.</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div class="fade-up">
@@ -152,7 +154,7 @@
                          class="w-full h-[500px] object-cover" alt="Clinic Interior">
                 </div>
                 <div class="flex flex-col justify-center space-y-12 px-8 fade-up" style="transition-delay: 200ms;">
-                    <p class="text-brand-gray leading-relaxed italic text-2xl font-serif">"Our clinical space is designed for tranquility and technical excellence."</p>
+                    <p class="text-brand-gray leading-relaxed italic text-2xl font-heading">"Our clinical space is designed for tranquility and technical excellence."</p>
                     <p class="text-xs uppercase tracking-widest leading-relaxed">We provide comprehensive eye examinations, contact lens fittings, and bespoke consultations for both retail and wholesale clients across Sri Lanka.</p>
                     <a href="https://wa.me/94770000000" class="btn-outline w-fit">Book a Consultation</a>
                 </div>
@@ -163,7 +165,7 @@
     <!-- Map Section -->
     <section class="py-24 px-8 bg-[#FAF9F6]">
         <div class="max-w-7xl mx-auto text-center mb-16 fade-up">
-            <h2 class="text-4xl font-serif mb-4">Located in the Heart of Negombo.</h2>
+            <h2 class="text-4xl font-heading mb-4">Located in the Heart of Negombo.</h2>
             <p class="text-[10px] uppercase tracking-widest text-brand-gray">68 Main Street, Negombo, Sri Lanka</p>
         </div>
         <div class="max-w-5xl mx-auto h-[500px] w-full bg-gray-200 grayscale fade-up">

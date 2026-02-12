@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,13 +15,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-bg': '#FAF9F6',
-                        'brand-text': '#121212',
-                        'brand-accent': '#8E7B55',
-                        'brand-gray': '#707070',
+                        'brand-bg': '#F6F6F4',
+                        'brand-text': '#111111',
+                        'brand-accent': '#1E2A44',
+                        'brand-gray': '#B8B8B8',
                     },
                     fontFamily: {
-                        'serif': ['Bodoni Moda', 'serif'],
+                        'heading': ['Playfair Display', 'sans-serif'],
                         'sans': ['Inter', 'sans-serif'],
                     }
                 }
@@ -68,7 +68,7 @@
 
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-brand-bg z-40 flex flex-col items-center justify-center translate-x-full transition-transform duration-700 cubic-bezier(0.77,0,0.175,1)" id="mobile-menu">
-    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-serif">
+    <div class="flex flex-col items-center space-y-8 uppercase text-2xl tracking-[0.2em] font-heading">
         <a href="index.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">Home</a>
         <a href="about.html" class="mobile-nav-link text-brand-text hover:text-brand-accent">About</a>
         <div class="flex flex-col items-center border-t border-b border-black/5 py-8 w-full text-center">
@@ -89,7 +89,7 @@
              class="absolute inset-0 w-full h-full object-cover grayscale brightness-50" alt="Mykita Hero">
         <div class="relative z-10 text-white max-w-4xl">
             <h2 class="text-xs uppercase tracking-[0.8em] mb-8 fade-up">Architectural Innovation</h2>
-            <h1 class="text-8xl md:text-[12rem] font-serif fade-up mb-12 leading-none" style="transition-delay: 100ms;">Mykita.</h1>
+            <h1 class="text-8xl md:text-[12rem] font-heading fade-up mb-12 leading-none" style="transition-delay: 100ms;">Mykita.</h1>
             <p class="text-xs uppercase tracking-[0.4em] opacity-60 leading-relaxed fade-up max-w-lg" style="transition-delay: 200ms;">A constant search for innovation, the visionary use of materials and a wealth of experience in eyewear design are the defining elements behind MYKITA’s collections.</p>
         </div>
     </header>
@@ -99,7 +99,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
                 <div class="fade-up">
                     <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">Modern Manufactory</h2>
-                    <h3 class="text-5xl md:text-7xl font-serif leading-tight mb-12">Handmade in Berlin.</h3>
+                    <h3 class="text-5xl md:text-7xl font-heading leading-tight mb-12">Handmade in Berlin.</h3>
                     <p class="text-white/40 leading-relaxed mb-8 uppercase text-xs tracking-widest">The MYKITA HAUS in Berlin is a place where multidisciplinary expertise meets specialized craftsmanship. All stages of production are unified under one roof.</p>
                     <ul class="space-y-6 text-[10px] uppercase tracking-[0.3em] text-brand-accent font-bold">
                         <li class="flex items-center"><span class="w-8 h-px bg-brand-accent mr-4"></span> Patented Screwless Hinges</li>
@@ -114,30 +114,34 @@
         </div>
     </section>
 
-    <section class="section-padding px-8 bg-white">
+    <section class="section-padding px-8 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-24 fade-up">
-                <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-6">Collections</h2>
-                <h3 class="text-5xl font-serif">Minimalist Excellence.</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div class="fade-up">
-                    <div class="aspect-[4/5] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb7307?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="Mykita 1">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                <!-- Left: Stacked Cards -->
+                <div class="lg:col-span-4 flex flex-col space-y-12">
+                    <div class="fade-up bg-[#F6F6F4] p-12 rounded-[3rem] text-center group">
+                        <div class="aspect-square mb-8 overflow-hidden rounded-2xl">
+                            <img src="https://images.unsplash.com/photo-1591076482161-421a3aaee5f4?auto=format&fit=crop&q=80&w=600"
+                                 class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" alt="Mykita Lite">
+                        </div>
+                        <h4 class="text-[10px] font-heading mb-2 tracking-[0.2em]">MYKITA | LITE</h4>
+                        <p class="text-[10px] text-brand-gray uppercase tracking-widest">Champagne Gold</p>
                     </div>
-                    <h4 class="text-sm font-bold uppercase tracking-widest text-center">No1 Series</h4>
+                    <div class="fade-up bg-[#F6F6F4] p-12 rounded-[3rem] text-center group" style="transition-delay: 100ms;">
+                        <div class="aspect-square mb-8 overflow-hidden rounded-2xl">
+                            <img src="https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=600"
+                                 class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" alt="Mykita Decades">
+                        </div>
+                        <h4 class="text-[10px] font-heading mb-2 tracking-[0.2em]">MYKITA | DECADES</h4>
+                        <p class="text-[10px] text-brand-gray uppercase tracking-widest">Matte Black</p>
+                    </div>
                 </div>
-                <div class="fade-up" style="transition-delay: 100ms;">
-                    <div class="aspect-[4/5] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1574258495973-f016dfbb5371?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="Mykita 2">
+                <!-- Right: Large Lifestyle -->
+                <div class="lg:col-span-8 fade-up" style="transition-delay: 200ms;">
+                    <div class="h-full min-h-[600px] overflow-hidden rounded-[3rem]">
+                        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1200"
+                             class="w-full h-full object-cover contrast-110" alt="Mykita Lifestyle">
                     </div>
-                    <h4 class="text-sm font-bold uppercase tracking-widest text-center">Lite Series</h4>
-                </div>
-                <div class="fade-up" style="transition-delay: 200ms;">
-                    <div class="aspect-[4/5] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1625591339762-431203277a81?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="Mykita 3">
-                    </div>
-                    <h4 class="text-sm font-bold uppercase tracking-widest text-center">Decades Series</h4>
                 </div>
             </div>
             <div class="mt-24 text-center">
