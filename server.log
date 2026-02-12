@@ -1,7 +1,0 @@
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /products.html HTTP/1.1" 200 -
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /css/style.css HTTP/1.1" 200 -
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /js/products.js HTTP/1.1" 200 -
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /assets/logo.svg HTTP/1.1" 200 -
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /js/animations.js HTTP/1.1" 200 -
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /js/menu.js HTTP/1.1" 200 -
-127.0.0.1 - - [12/Feb/2026 08:51:10] "GET /data/products.json HTTP/1.1" 200 -

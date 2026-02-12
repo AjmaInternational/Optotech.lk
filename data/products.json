@@ -37,7 +37,7 @@
         "model": "Walk in Paris",
         "price": "58,000 LKR",
         "description": "Parisian elegance met with modern architectural lines. A bold fashion statement.",
-        "image": "https://images.unsplash.com/photo-1513264336818-109b4731498b?auto=format&fit=crop&q=80&w=1200"
+        "image": "https://images.unsplash.com/photo-1511499767390-a733502666ee?auto=format&fit=crop&q=80&w=1200"
     },
     {
         "id": 6,
@@ -102,5 +102,101 @@
         "price": "32,000 LKR",
         "description": "The most recognizable style in the history of sunglasses. A true icon.",
         "image": "https://images.unsplash.com/photo-1544948074-297072c7bb71?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 14,
+        "brand": "Ray-Ban",
+        "model": "Aviator Total Black",
+        "price": "35,000 LKR",
+        "description": "The world's most iconic eyewear model, now in a striking all-black finish.",
+        "image": "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 15,
+        "brand": "Mykita",
+        "model": "No.1 Sun",
+        "price": "72,000 LKR",
+        "description": "A masterpiece of Berlin engineering. Patented hinge and stainless steel.",
+        "image": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 16,
+        "brand": "Bo Bo Noir",
+        "model": "Horizon",
+        "price": "51,000 LKR",
+        "description": "A slim, elongated profile for a modern, fashion-forward look.",
+        "image": "https://images.unsplash.com/photo-1543881477-80f74574972f?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 17,
+        "brand": "Sunshine",
+        "model": "Solstice",
+        "price": "39,500 LKR",
+        "description": "Vibrant colors meet polarized protection for the ultimate beach companion.",
+        "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 18,
+        "brand": "Peter and May",
+        "model": "Le Marais",
+        "price": "64,500 LKR",
+        "description": "Artisanally crafted in France. A tribute to the creative heart of Paris.",
+        "image": "https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 19,
+        "brand": "Oliver Peoples",
+        "model": "Riley-R",
+        "price": "55,000 LKR",
+        "description": "A refined, intellectual frame that balances style and substance.",
+        "image": "https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 20,
+        "brand": "Ray-Ban",
+        "model": "Clubmaster",
+        "price": "33,500 LKR",
+        "description": "Retro and timeless. Inspired by the 1950s, the Clubmaster is for thinkers.",
+        "image": "https://images.unsplash.com/photo-1544948074-297072c7bb71?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 21,
+        "brand": "Bo Bo Noir",
+        "model": "Eclipse",
+        "price": "53,000 LKR",
+        "description": "Bold, circular frames that demand attention. Pure avant-garde luxury.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 22,
+        "brand": "Mykita",
+        "model": "Lessrim",
+        "price": "75,000 LKR",
+        "description": "The ultimate minimalist frame. Barely there, yet structurally superior.",
+        "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 23,
+        "brand": "Sunshine",
+        "model": "Zenith",
+        "price": "42,000 LKR",
+        "description": "Our premium performance sunglasses for high-altitude clarity.",
+        "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 24,
+        "brand": "Oliver Peoples",
+        "model": "Cary Grant",
+        "price": "59,000 LKR",
+        "description": "The signature style of the Hollywood legend, reimagined for today.",
+        "image": "https://images.unsplash.com/photo-1508341591423-4347099e1f19?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": 25,
+        "brand": "Peter and May",
+        "model": "Opera",
+        "price": "67,000 LKR",
+        "description": "Grandeur and drama. Large-scale frames for a commanding presence.",
+        "image": "https://images.unsplash.com/photo-1563903530908-afdd155d057a?auto=format&fit=crop&q=80&w=1200"
     }
 ]

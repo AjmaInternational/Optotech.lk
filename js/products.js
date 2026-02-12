@@ -19,24 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         products.forEach(product => {
             const productCard = document.createElement('div');
-            productCard.className = 'product-card group fade-up bg-white rounded-[3rem] p-12 hover:shadow-xl transition-all duration-700';
+            productCard.className = 'product-card group fade-up';
 
             const whatsappMessage = encodeURIComponent(`Hi Optotech, I am interested in the ${product.brand} ${product.model} eyewear.`);
             const whatsappLink = `https://wa.me/94770000000?text=${whatsappMessage}`;
 
             productCard.innerHTML = `
-                <div class="overflow-hidden aspect-square bg-[#F6F6F4] mb-12 rounded-[2rem]">
-                    <img src="${product.image}" alt="${product.model}" class="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-1000">
+                <div class="overflow-hidden aspect-[4/5] bg-white mb-8 md:mb-12 border border-black/5">
+                    <img src="${product.image}" alt="${product.model}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
                 </div>
-                <div class="space-y-6 text-center">
+                <div class="space-y-4 md:space-y-8 text-center px-4 md:px-0">
                     <div>
-                        <p class="text-[9px] uppercase tracking-[0.4em] text-brand-gray mb-2 font-bold">${product.brand}</p>
-                        <h3 class="text-xl font-heading tracking-tighter mb-2">${product.model}</h3>
-                        <p class="text-sm font-medium text-brand-accent">${product.price}</p>
+                        <p class="text-[8px] md:text-[10px] uppercase tracking-[0.4em] text-brand-gray mb-2 md:mb-4">${product.brand}</p>
+                        <h3 class="text-xl md:text-4xl font-heading tracking-tight mb-2 md:mb-4 italic">${product.model}</h3>
+                        <p class="text-sm md:text-xl font-light text-brand-accent uppercase tracking-[0.2em]">${product.price}</p>
                     </div>
-                    <div class="border-t border-black/5 pt-6">
-                        <p class="text-[10px] text-brand-gray uppercase tracking-widest leading-relaxed mb-8 line-clamp-1">${product.description}</p>
-                        <a href="${whatsappLink}" target="_blank" class="btn-outline inline-block px-12 py-4 text-[9px] tracking-[0.2em] font-bold">Inquire</a>
+                    <div class="border-t border-black/5 pt-6 md:pt-10 max-w-sm mx-auto">
+                        <p class="hidden md:block text-xs text-brand-gray uppercase tracking-widest leading-relaxed mb-12">${product.description}</p>
+                        <a href="${whatsappLink}" target="_blank" class="inline-block w-full border border-black px-8 py-4 md:py-6 text-[10px] tracking-[0.4em] uppercase hover:bg-black hover:text-white transition-all duration-500">Inquire</a>
                     </div>
                 </div>
             `;
