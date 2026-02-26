@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collections | Optotech.lk | Premium Sunglasses & Frames</title>
-    <meta name="description" content="Explore our curated collection of luxury eyewear. From Ray-Ban classics to Sunshine colors, find your perfect pair at Optotech Negombo.">
+    <title>About Us | Optotech.lk | Our Vision & Heritage in Negombo</title>
+    <meta name="description" content="Learn about Optotech.lk, Negombo's premier luxury optical destination. Combining decades of clinical expertise with a refined fashion aesthetic in Sri Lanka.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,7 @@
 
     <div class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-medium">
         <a href="index.html" class="hover:opacity-50 transition-opacity">Home</a>
-        <a href="about.html" class="hover:opacity-50 transition-opacity">About</a>
+        <a href="about.html" class="nav-link-active">About</a>
         <div class="relative group">
             <span class="cursor-pointer hover:opacity-50 transition-opacity flex items-center h-full">Brands <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
             <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 hidden group-hover:block min-w-[240px]">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <a href="products.html" class="nav-link-active">Collections</a>
+        <a href="products.html" class="hover:opacity-50 transition-opacity">Collections</a>
     </div>
 
     <button class="md:hidden flex flex-col space-y-1.5 focus:outline-none z-50" id="menu-toggle">
@@ -87,31 +87,97 @@
     </div>
 </div>
 
-<main id="main-content" class="pt-48 pb-24 px-8">
-    <div class="max-w-7xl mx-auto">
-        <header class="mb-24 text-center">
-            <h1 class="text-4xl md:text-9xl font-heading mb-8 fade-up">Our Collections</h1>
-            <p class="text-brand-gray text-[10px] uppercase tracking-[0.5em] fade-up">Curated Eyewear for the Visionary</p>
-        </header>
-
-        <!-- Brand Filter -->
-        <div class="flex flex-wrap justify-center gap-4 md:gap-12 mb-24 fade-up border-b border-black/5 pb-12 overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <button class="filter-btn active text-[10px] uppercase tracking-[0.3em] px-4 py-2 border border-black hover:bg-black hover:text-white transition-all" data-brand="all">All</button>
-            <button class="filter-btn text-[10px] uppercase tracking-[0.3em] px-4 py-2 border border-black/5 hover:border-black transition-all" data-brand="RAY-BAN">Ray-Ban</button>
-            <button class="filter-btn text-[10px] uppercase tracking-[0.3em] px-4 py-2 border border-black/5 hover:border-black transition-all" data-brand="SUNSHINE">Sunshine</button>
-            <button class="filter-btn text-[10px] uppercase tracking-[0.3em] px-4 py-2 border border-black/5 hover:border-black transition-all" data-brand="OLIVER PEOPLES">Oliver Peoples</button>
-            <button class="filter-btn text-[10px] uppercase tracking-[0.3em] px-4 py-2 border border-black/5 hover:border-black transition-all" data-brand="MYKITA">Mykita</button>
-            <button class="filter-btn text-[10px] uppercase tracking-[0.3em] px-4 py-2 border border-black/5 hover:border-black transition-all" data-brand="BO BO NOIR">Bo Bo Noir</button>
+<main id="main-content">
+    <!-- About Hero -->
+    <header class="h-[80vh] relative flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1505373633562-e285b7cf4946?auto=format&fit=crop&q=80&w=2000"
+             class="absolute inset-0 w-full h-full object-cover grayscale" alt="About Optotech">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center text-white">
+            <h2 class="text-xs uppercase tracking-[0.6em] mb-6 fade-up">Our Heritage</h2>
+            <h1 class="text-5xl md:text-[8rem] font-heading fade-up" style="transition-delay: 100ms;">Defining Vision.</h1>
         </div>
+    </header>
 
-        <div id="product-container" class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-24 md:gap-y-48">
-            <!-- Products will be injected here -->
+    <!-- Our Philosophy -->
+    <section class="section-padding px-8 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div class="fade-up">
+                    <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">Philosophy</h2>
+                    <h3 class="text-5xl md:text-7xl font-heading mb-12 leading-tight tracking-tighter">Clarity Meets Character.</h3>
+                    <p class="text-brand-gray leading-relaxed max-w-md uppercase text-[10px] tracking-widest">
+                        At Optotech, we believe that eyewear is the most intimate accessory. It is the lens through which you see the world, and the frame through which the world sees you. Based in the heart of Negombo, we have dedicated over a decade to refining this intersection of clinical precision and personal style.
+                    </p>
+                </div>
+                <div class="fade-up" style="transition-delay: 200ms;">
+                    <div class="rounded-[4rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1200"
+                             class="w-full aspect-[3/4] object-cover" alt="Fashion Optical">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Heritage & Precision -->
+    <section class="py-32 px-8 bg-brand-accent text-white rounded-t-[5rem]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-20">
+            <div class="fade-up">
+                <span class="text-[#F6F6F4] font-heading text-5xl italic block mb-8">2010</span>
+                <h4 class="text-xl font-heading mb-6 tracking-tight">Established in Negombo</h4>
+                <p class="text-white/60 text-[10px] leading-relaxed uppercase tracking-widest">Founded with a mission to bring international eyewear standards to Sri Lanka.</p>
+            </div>
+            <div class="fade-up" style="transition-delay: 100ms;">
+                <span class="text-[#F6F6F4] font-heading text-5xl italic block mb-8">Precision</span>
+                <h4 class="text-xl font-heading mb-6 tracking-tight">Advanced Diagnostics</h4>
+                <p class="text-white/60 text-[10px] leading-relaxed uppercase tracking-widest">Equipped with the latest clinical technology for unmatched prescription accuracy.</p>
+            </div>
+            <div class="fade-up" style="transition-delay: 200ms;">
+                <span class="text-[#F6F6F4] font-heading text-5xl italic block mb-8">Curation</span>
+                <h4 class="text-xl font-heading mb-6 tracking-tight">Editorial Selection</h4>
+                <p class="text-white/60 text-[10px] leading-relaxed uppercase tracking-widest">Every frame in our studio is hand-selected from the world's leading design houses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Clinic Experience -->
+    <section class="section-padding px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 fade-up">
+                <h2 class="text-xs uppercase tracking-[0.5em] text-brand-accent mb-8">The Experience</h2>
+                <h3 class="text-5xl md:text-8xl font-heading">The Precision Clinic.</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="fade-up">
+                    <img src="https://images.unsplash.com/photo-1596708051770-07e36611f7c1?auto=format&fit=crop&q=80&w=1200"
+                         class="w-full h-[500px] object-cover" alt="Clinic Interior">
+                </div>
+                <div class="flex flex-col justify-center space-y-12 px-8 fade-up" style="transition-delay: 200ms;">
+                    <p class="text-brand-gray leading-relaxed italic text-2xl font-heading">"Our clinical space is designed for tranquility and technical excellence."</p>
+                    <p class="text-xs uppercase tracking-widest leading-relaxed">We provide comprehensive eye examinations, contact lens fittings, and bespoke consultations for both retail and wholesale clients across Sri Lanka.</p>
+                    <a href="https://wa.me/94770000000" class="btn-outline w-fit">Book a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-24 px-8 bg-[#FAF9F6]">
+        <div class="max-w-7xl mx-auto text-center mb-16 fade-up">
+            <h2 class="text-4xl font-heading mb-4">Located in the Heart of Negombo.</h2>
+            <p class="text-[10px] uppercase tracking-widest text-brand-gray">68 Main Street, Negombo, Sri Lanka</p>
+        </div>
+        <div class="max-w-5xl mx-auto h-[500px] w-full bg-gray-200 grayscale fade-up">
+            <a href="https://goo.gl/maps/example" target="_blank" class="block w-full h-full">
+                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Map Location">
+            </a>
+        </div>
+    </section>
 </main>
 
 <footer class="py-20 px-8 border-t border-black/5 bg-white">
-    <!-- Same footer as index -->
+    <!-- Footer same as index -->
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-12 md:space-y-0">
         <div class="space-y-8">
             <img src="assets/logo.svg" alt="OPTOTECH" class="h-6">
@@ -141,7 +207,6 @@
     </div>
 </footer>
 
-<script src="js/products.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/menu.js"></script>
 

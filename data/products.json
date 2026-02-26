@@ -1,177 +1,202 @@
 [
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 1",
-        "price": "LKR 15500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product1.jpg"
+        "id": 1,
+        "brand": "Bo Bo Noir",
+        "model": "Noir 01",
+        "price": "48,500 LKR",
+        "description": "Signature oversized frame in polished black acetate with subtle gold detailing.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 2",
-        "price": "LKR 16000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product2.jpg"
+        "id": 2,
+        "brand": "Oliver Peoples",
+        "model": "Gregory Peck",
+        "price": "52,000 LKR",
+        "description": "The quintessential vintage-inspired frame, handcrafted from layers of custom acetate.",
+        "image": "https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 3",
-        "price": "LKR 16500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product3.jpg"
+        "id": 3,
+        "brand": "Mykita",
+        "model": "Lite Acetate",
+        "price": "64,000 LKR",
+        "description": "Ultra-lightweight surgical steel combined with refined acetate for ultimate comfort.",
+        "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 4",
-        "price": "LKR 17000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product4.jpg"
+        "id": 4,
+        "brand": "Sunshine",
+        "model": "Aura",
+        "price": "38,000 LKR",
+        "description": "A radiant silhouette inspired by the tropical light of the Indian Ocean.",
+        "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 5",
-        "price": "LKR 17500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product5.jpg"
+        "id": 5,
+        "brand": "Peter and May",
+        "model": "Walk in Paris",
+        "price": "58,000 LKR",
+        "description": "Parisian elegance met with modern architectural lines. A bold fashion statement.",
+        "image": "https://images.unsplash.com/photo-1511499767390-a733502666ee?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 6",
-        "price": "LKR 18000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product6.jpg"
+        "id": 6,
+        "brand": "Bo Bo Noir",
+        "model": "Midnight",
+        "price": "46,000 LKR",
+        "description": "A deep navy frame with gradient lenses, perfect for coastal sunsets.",
+        "image": "https://images.unsplash.com/photo-1556015048-4d3aa10df74c?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 7",
-        "price": "LKR 18500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product7.jpg"
+        "id": 7,
+        "brand": "Mykita",
+        "model": "Decades",
+        "price": "68,000 LKR",
+        "description": "Honoring the classics with modern technical precision. Stainless steel construction.",
+        "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 8",
-        "price": "LKR 19000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product8.jpg"
+        "id": 8,
+        "brand": "Oliver Peoples",
+        "model": "Sheldrake",
+        "price": "54,500 LKR",
+        "description": "An iconic bold frame with a intellectual, timeless aesthetic.",
+        "image": "https://images.unsplash.com/photo-1508341591423-4347099e1f19?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 9",
-        "price": "LKR 19500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product9.jpg"
+        "id": 9,
+        "brand": "Bo Bo Noir",
+        "model": "Noir 02",
+        "price": "49,000 LKR",
+        "description": "Geometric precision meets luxury comfort in this avant-garde silhouette.",
+        "image": "https://images.unsplash.com/photo-1563903530908-afdd155d057a?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 10",
-        "price": "LKR 20000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product10.jpg"
+        "id": 10,
+        "brand": "Sunshine",
+        "model": "Breeze",
+        "price": "36,500 LKR",
+        "description": "Light as air, designed for those who seek the warmth of the sun.",
+        "image": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 11",
-        "price": "LKR 20500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product11.jpg"
+        "id": 11,
+        "brand": "Peter and May",
+        "model": "Saint Germain",
+        "price": "62,000 LKR",
+        "description": "Sophisticated and effortless. The essence of French luxury eyewear.",
+        "image": "https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 12",
-        "price": "LKR 21000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product12.jpg"
+        "id": 12,
+        "brand": "Oliver Peoples",
+        "model": "O'Malley",
+        "price": "53,000 LKR",
+        "description": "Inspired by the classic frame worn by the legendary Dodgers owner.",
+        "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 13",
-        "price": "LKR 21500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product13.jpg"
+        "id": 13,
+        "brand": "Ray-Ban",
+        "model": "Wayfarer Classic",
+        "price": "32,000 LKR",
+        "description": "The most recognizable style in the history of sunglasses. A true icon.",
+        "image": "https://images.unsplash.com/photo-1544948074-297072c7bb71?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 14",
-        "price": "LKR 22000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product14.jpg"
+        "id": 14,
+        "brand": "Ray-Ban",
+        "model": "Aviator Total Black",
+        "price": "35,000 LKR",
+        "description": "The world's most iconic eyewear model, now in a striking all-black finish.",
+        "image": "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 15",
-        "price": "LKR 22500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product15.jpg"
+        "id": 15,
+        "brand": "Mykita",
+        "model": "No.1 Sun",
+        "price": "72,000 LKR",
+        "description": "A masterpiece of Berlin engineering. Patented hinge and stainless steel.",
+        "image": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 16",
-        "price": "LKR 23000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product16.jpg"
+        "id": 16,
+        "brand": "Bo Bo Noir",
+        "model": "Horizon",
+        "price": "51,000 LKR",
+        "description": "A slim, elongated profile for a modern, fashion-forward look.",
+        "image": "https://images.unsplash.com/photo-1543881477-80f74574972f?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 17",
-        "price": "LKR 23500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product17.jpg"
+        "id": 17,
+        "brand": "Sunshine",
+        "model": "Solstice",
+        "price": "39,500 LKR",
+        "description": "Vibrant colors meet polarized protection for the ultimate beach companion.",
+        "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 18",
-        "price": "LKR 24000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product18.jpg"
+        "id": 18,
+        "brand": "Peter and May",
+        "model": "Le Marais",
+        "price": "64,500 LKR",
+        "description": "Artisanally crafted in France. A tribute to the creative heart of Paris.",
+        "image": "https://images.unsplash.com/photo-1516886635086-2b3c423c0947?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 19",
-        "price": "LKR 24500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product19.jpg"
+        "id": 19,
+        "brand": "Oliver Peoples",
+        "model": "Riley-R",
+        "price": "55,000 LKR",
+        "description": "A refined, intellectual frame that balances style and substance.",
+        "image": "https://images.unsplash.com/photo-1508243529287-e21914733111?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 20",
-        "price": "LKR 25000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product20.jpg"
+        "id": 20,
+        "brand": "Ray-Ban",
+        "model": "Clubmaster",
+        "price": "33,500 LKR",
+        "description": "Retro and timeless. Inspired by the 1950s, the Clubmaster is for thinkers.",
+        "image": "https://images.unsplash.com/photo-1544948074-297072c7bb71?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 21",
-        "price": "LKR 25500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product21.jpg"
+        "id": 21,
+        "brand": "Bo Bo Noir",
+        "model": "Eclipse",
+        "price": "53,000 LKR",
+        "description": "Bold, circular frames that demand attention. Pure avant-garde luxury.",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 22",
-        "price": "LKR 26000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product22.jpg"
+        "id": 22,
+        "brand": "Mykita",
+        "model": "Lessrim",
+        "price": "75,000 LKR",
+        "description": "The ultimate minimalist frame. Barely there, yet structurally superior.",
+        "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 23",
-        "price": "LKR 26500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product23.jpg"
+        "id": 23,
+        "brand": "Sunshine",
+        "model": "Zenith",
+        "price": "42,000 LKR",
+        "description": "Our premium performance sunglasses for high-altitude clarity.",
+        "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 24",
-        "price": "LKR 27000",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product24.jpg"
+        "id": 24,
+        "brand": "Oliver Peoples",
+        "model": "Cary Grant",
+        "price": "59,000 LKR",
+        "description": "The signature style of the Hollywood legend, reimagined for today.",
+        "image": "https://images.unsplash.com/photo-1508341591423-4347099e1f19?auto=format&fit=crop&q=80&w=1200"
     },
     {
-        "brand": "Optotech",
-        "name": "Luxury Frame 25",
-        "price": "LKR 27500",
-        "description": "Premium crafted frame designed for comfort and elegance.",
-        "image": "assets/images/product25.jpg"
+        "id": 25,
+        "brand": "Peter and May",
+        "model": "Opera",
+        "price": "67,000 LKR",
+        "description": "Grandeur and drama. Large-scale frames for a commanding presence.",
+        "image": "https://images.unsplash.com/photo-1563903530908-afdd155d057a?auto=format&fit=crop&q=80&w=1200"
     }
 ]
